@@ -16,7 +16,6 @@
 */
 #include<stdio.h>
 #include<stdlib.h>
-#include<graphics.h>
 
 int main(){
 	int hour; // The variable that will hold the hour that the user will give us
@@ -42,7 +41,11 @@ int main(){
 	printf("\n Good evening");
 }
 	
-	else if((hour>=22) || (hour<=2)){
+	else if((hour>=22) && (hour<=24)){
+	printf("\n Good night");
+}
+
+	else if((hour>=0) && (hour<=2)){
 	printf("\n Good night");
 }
 	// This will send a message if the user gives me an invalid input
@@ -52,4 +55,3 @@ int main(){
 
  return 0;
 }
-
